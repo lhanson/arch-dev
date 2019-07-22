@@ -1,4 +1,4 @@
-FROM base/archlinux:latest
+FROM archlinux/base:latest
 
 RUN pacman --sync --refresh --sysupgrade --noconfirm
-RUN pacman --sync --noconfirm gcc make check
+RUN pacman --sync --noconfirm gcc make check git
